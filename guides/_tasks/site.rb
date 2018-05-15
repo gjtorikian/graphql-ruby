@@ -73,7 +73,7 @@ namespace :site do
     require_relative "../../lib/graphql/version"
 
     def to_rubydoc_url(path)
-      "http://www.rubydoc.info/gems/graphql/#{GraphQL::VERSION}/" + path
+      "http://www.rubydoc.info/gems/graphql/" + path
         .gsub("::", "/")                        # namespaces
         .sub(/#(.+)$/, "#\\1-instance_method")  # instance methods
         .sub(/\.(.+)$/, "#\\1-class_method")    # class methods
